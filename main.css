@@ -1,14 +1,24 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+.platzhalter {
+  height: 300vh;
+}
+
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #101010;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
 }
 
 .hero {
-  background: linear-gradient(
-      to top,
-      rgba(85, 85, 85, 0.52),
-      rgba(0, 0, 0, 0.73)
-    ),
-    url(img/pizza-3007395_1280.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+    url(img/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,19 +27,50 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .title {
-  color: white;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 2.9rem;
+  line-height: 2.9rem;
 }
 
 .subtitle {
+  font-weight: 500;
   color: rgb(209, 209, 209);
+  margin: 0.8rem 0 0 0;
 }
 
-.openinghours {
-  color: white;
-  background-color: rgb(255, 0, 0);
-  padding: 1em 2em;
+.herocta {
+  color: #ffffff;
+  background-color: rgb(252, 27, 27);
+  padding: 1rem 2rem;
   text-decoration: none;
+  margin: 4rem 0 0 0;
+  border: 1px solid rgb(252, 27, 27);
+  /* transition: all 0.2s ease-in-out; */
+}
+
+.herocta:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgb(252, 27, 27);
+  transition-duration: 400ms;
+}
+
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .title {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+  }
 }
