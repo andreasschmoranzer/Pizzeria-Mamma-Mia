@@ -58,6 +58,25 @@ body {
   transition-duration: 400ms;
 }
 
+.navbar {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.navbar-item {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.navbar-item:hover {
+  color: rgb(252, 27, 27);
+}
+
 @media only screen and (min-width: 600px) {
   .title {
     font-size: 4rem;
