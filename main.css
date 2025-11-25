@@ -22,7 +22,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,13 +64,17 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1.8rem;
+  font-size: 0.9rem;
+  padding: 0 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  /* word-break: break-all; */
+  /* overflow-wrap: break-word; */
 }
 
 .navbar-item {
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.9rem;
 }
 
 .navbar-item:hover {
@@ -89,11 +93,23 @@ body {
   .herocta {
     padding: 1.1rem 2.1rem;
   }
+
+  .navbar {
+    gap: 2.5rem;
+  }
+
+  .navbar {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .title {
     font-size: 5.5rem;
     line-height: 5.5rem;
+  }
+
+  .navbar {
+    gap: 5rem;
   }
 }
