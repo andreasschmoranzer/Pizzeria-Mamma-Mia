@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: rgb(252, 27, 27);
+}
+
 body {
   background-color: #101010;
   color: #ffffff;
@@ -44,29 +48,22 @@ body {
 
 .hero-cta {
   color: #ffffff;
-  background-color: rgb(252, 27, 27);
+  background-color: var(--primary-color);
   padding: 1rem 2rem;
   text-decoration: none;
   margin: 4rem 0 0 0;
-  border: 1px solid rgb(252, 27, 27);
+  border: 1px solid var(--primary-color);
   /* transition: all 0.2s ease-in-out; */
 }
 
 .hero-cta:hover {
   background-color: rgba(0, 0, 0, 0.2);
-  color: rgb(252, 27, 27);
+  color: var(--primary-color);
   transition-duration: 400ms;
 }
 
-.navigation {
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 0 0 2rem;
-}
-
 .navbar {
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,42 +75,12 @@ body {
 }
 
 .navbar-item {
-  color: #ffffff;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .navbar-item:hover {
-  color: rgb(252, 27, 27);
-}
-
-.burger {
-  border: 1px solid rgb(252, 27, 27);
-  width: max-content;
-  padding: 0.5rem;
-  align-items: center;
-}
-
-.burger-item {
-  background-color: rgb(252, 27, 27);
-  height: 0.2rem;
-  width: 1.5rem;
-  border-radius: 0.5rem;
-}
-
-/* Auf eine CSS Pseudoklasse mit :not reduzieren! */
-
-.burger-item:nth-child(2) {
-  margin-top: 0.2rem;
-}
-
-.burger-item:nth-child(3) {
-  margin-top: 0.2rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
+  color: var(--primary-color);
 }
 
 @media only screen and (min-width: 600px) {
@@ -132,10 +99,6 @@ body {
   .navbar {
     gap: 2.5rem;
     font-size: 1.1rem;
-  }
-
-  .burger {
-    display: none;
   }
 }
 
