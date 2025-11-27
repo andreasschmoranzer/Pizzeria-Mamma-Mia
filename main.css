@@ -20,6 +20,29 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+.navigation {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0 1.2rem;
+}
+
+.navigation-item {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation-item:hover {
+  color: var(--primary-color);
+}
+
 .hero {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
     url(img/hero.jpg);
@@ -62,32 +85,17 @@ body {
   transition-duration: 400ms;
 }
 
-.navbar {
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.8rem;
-  font-size: 0.9rem;
-  padding: 0 1.2rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.navbar-item {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.navbar-item:hover {
-  color: var(--primary-color);
-}
-
 @media only screen and (min-width: 600px) {
+  .navigation {
+    gap: 2.5rem;
+    font-size: 1rem;
+  }
+
   .title {
     font-size: 4rem;
     line-height: 4rem;
   }
+
   .subtitle {
     font-size: 1.5rem;
   }
@@ -95,20 +103,15 @@ body {
   .herocta {
     padding: 1.1rem 2.1rem;
   }
-
-  .navbar {
-    gap: 2.5rem;
-    font-size: 1.1rem;
-  }
 }
 
 @media only screen and (min-width: 992px) {
+  .navigation {
+    gap: 5rem;
+  }
+
   .title {
     font-size: 5.5rem;
     line-height: 5.5rem;
-  }
-
-  .navbar {
-    gap: 5rem;
   }
 }
