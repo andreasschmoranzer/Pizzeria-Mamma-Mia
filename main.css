@@ -85,6 +85,65 @@ body {
   transition-duration: 400ms;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.about-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-decoration: underline var(--primary-color);
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.1rem;
+}
+
+.about-cta {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  width: max-content;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: rgb(255, 255, 0);
+  padding: 2rem;
+  height: 500px;
+}
+
+.collage-child {
+  background-color: aqua;
+  color: red;
+  /* padding: 1rem 1rem 0 1rem; */
+}
+
+.collage-child:nth-child(1) {
+  background-color: bisque;
+  /* height: 100%; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.collage-child:nth-child(2) {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.collage-child:nth-child(3) {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
 @media only screen and (min-width: 600px) {
   .navigation {
     gap: 2.5rem;
