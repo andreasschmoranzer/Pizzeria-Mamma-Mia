@@ -86,18 +86,29 @@ body {
 }
 
 .about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 0 3rem;
+}
+
+.about-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
 }
 
-.about-title {
+.heading {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-decoration: underline var(--primary-color);
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.1rem;
+  margin-top: 2rem;
+}
+
+.text {
+  color: rgb(209, 209, 209);
 }
 
 .about-cta {
@@ -110,7 +121,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.about-collage {
+.about-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -169,5 +180,10 @@ body {
   .title {
     font-size: 5.5rem;
     line-height: 5.5rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem 3rem 0 3rem;
   }
 }
