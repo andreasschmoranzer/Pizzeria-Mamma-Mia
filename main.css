@@ -20,6 +20,18 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+p {
+  color: rgb(209, 209, 209);
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-decoration: underline var(--primary-color);
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.1rem;
+}
+
 .navigation {
   height: 5rem;
   display: flex;
@@ -65,7 +77,6 @@ body {
 
 .subtitle {
   font-weight: 500;
-  color: rgb(209, 209, 209);
   margin: 0.8rem 0 0 0;
 }
 
@@ -95,20 +106,11 @@ body {
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .heading {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  text-decoration: underline var(--primary-color);
-  text-underline-offset: 0.3rem;
-  text-decoration-thickness: 0.1rem;
-  margin-top: 2rem;
-}
-
-.text {
-  color: rgb(209, 209, 209);
+  margin-top: 10rem;
 }
 
 .about-cta {
@@ -121,7 +123,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-#about-images {
+.about-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
