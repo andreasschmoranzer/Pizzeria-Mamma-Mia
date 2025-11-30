@@ -11,7 +11,7 @@
 }
 
 :root {
-  --primary-color: rgb(27, 27, 252);
+  --primary-color: rgb(252, 27, 27);
 }
 
 body {
@@ -134,7 +134,7 @@ h2 {
 .about-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .about-img:nth-child(1) {
