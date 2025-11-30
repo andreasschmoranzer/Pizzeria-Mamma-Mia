@@ -125,7 +125,6 @@ body {
 .about-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
   /* background-color: rgb(255, 255, 0); */
   gap: 1rem;
 }
