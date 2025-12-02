@@ -136,6 +136,7 @@ body {
 }
 
 .about-img-small {
+  min-width: 50%;
   display: grid;
   gap: 0.6rem;
 }
