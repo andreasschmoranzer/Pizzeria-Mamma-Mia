@@ -11,7 +11,8 @@
 }
 
 :root {
-  --primary-color: rgb(218, 26, 0);
+  /* rgb(218, 26, 0) */
+  --primary-color: rgb(27, 191, 21);
   --text-color: rgb(209, 209, 209);
   scroll-behavior: smooth;
 }
@@ -136,8 +137,8 @@ body {
 }
 
 .about-img-small {
-  min-width: 50%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.6rem;
 }
 
