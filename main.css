@@ -13,6 +13,7 @@
 :root {
   --primary-color: rgb(218, 26, 0);
   --text-color: rgb(209, 209, 209);
+  --text-size: 0.85rem;
   scroll-behavior: smooth;
 }
 
@@ -103,10 +104,12 @@ body {
   border-bottom: 1px solid var(--primary-color);
   width: fit-content;
   margin: 1.5rem 0 1.5rem 0;
+  font-size: 1.3rem;
 }
 
 .about-text {
   color: var(--text-color);
+  font-size: var(--text-size);
 }
 
 .about-cta {
@@ -141,7 +144,7 @@ body {
   width: 100%;
   margin-top: 2rem;
   padding: 0 0 1.5rem 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
     url(img/info.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -152,10 +155,12 @@ body {
 
 .opening-time {
   text-align: right;
+  font-size: var(--text-size);
 }
 
 .opening-day {
   color: var(--text-color);
+  font-size: var(--text-size);
 }
 
 @media only screen and (min-width: 600px) {
@@ -175,10 +180,6 @@ body {
 
   .cta {
     padding: 1.1rem 2.1rem;
-  }
-
-  .about-text {
-    font-size: 1.1rem;
   }
 }
 
@@ -203,6 +204,10 @@ body {
     font-size: 2rem;
   }
 
+  .about-text {
+    font-size: 1.1rem;
+  }
+
   .about-gallery,
   .about-img-small {
     gap: 1rem;
@@ -215,7 +220,7 @@ body {
 
   .opening-day,
   .opening-time {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
