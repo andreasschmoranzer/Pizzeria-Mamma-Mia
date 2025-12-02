@@ -11,8 +11,7 @@
 }
 
 :root {
-  /* rgb(218, 26, 0) */
-  --primary-color: rgb(27, 191, 21);
+  --primary-color: rgb(218, 26, 0);
   --text-color: rgb(209, 209, 209);
   scroll-behavior: smooth;
 }
