@@ -163,6 +163,7 @@ body {
 .opening-dates {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 0.2rem;
   font-size: var(--text-size);
 }
 
@@ -236,7 +237,7 @@ body {
   .about-container {
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 8rem;
     gap: 2rem;
   }
 
@@ -254,14 +255,12 @@ body {
   }
 
   .opening-bg {
-    margin-top: 6rem;
+    margin-top: 8rem;
     padding: 6rem 0 6rem 0;
   }
 
-  .opening-day,
-  .opening-time {
+  .opening-dates {
     font-size: 1.4rem;
-    line-height: 2rem;
   }
 }
 
