@@ -80,6 +80,8 @@ body {
   text-decoration: none;
   border: 1px solid var(--primary-color);
   transition: all 0.2s ease-in-out;
+  display: block;
+  width: max-content;
 }
 
 .hero-cta {
@@ -91,9 +93,12 @@ body {
   color: var(--primary-color);
 }
 
-.about-container {
+.about {
   display: grid;
   gap: 1.5rem;
+}
+
+.container {
   max-width: 85%;
   margin: 0 auto;
 }
@@ -103,8 +108,11 @@ body {
   letter-spacing: 0.1rem;
   border-bottom: 1px solid var(--primary-color);
   width: fit-content;
-  margin: 1.5rem 0 0.7rem 0;
   font-size: 1.5rem;
+}
+
+.about .heading {
+  margin: 1.5rem 0 0.7rem 0;
 }
 
 .about-text {
@@ -151,7 +159,7 @@ body {
 }
 
 .opening-information .heading {
-  margin-top: 0;
+  margin: 0 0 0.7rem 0;
 }
 
 .opening-information {
@@ -178,6 +186,33 @@ body {
   text-align: right;
 }
 
+.contact-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact .heading {
+  margin-bottom: 0.7rem;
+}
+
+.contact-data:not(:first-of-type) {
+  margin-top: 0.3rem;
+}
+
+.contact .cta:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.contact .cta {
+  margin-top: 0.7rem;
+}
+
 @media only screen and (min-width: 600px) {
   .navigation {
     gap: 2.5rem;
@@ -196,6 +231,17 @@ body {
   .cta {
     padding: 1.1rem 2.1rem;
   }
+
+  .contact-img {
+    max-width: 60%;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -208,7 +254,7 @@ body {
     line-height: 5.5rem;
   }
 
-  .about-container {
+  .about {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-top: 8rem;
@@ -239,7 +285,7 @@ body {
 }
 
 @media only screen and (min-width: 1400px) {
-  .about-container {
+  .about {
     max-width: 1200px;
   }
 }
