@@ -178,27 +178,6 @@ body {
   text-align: right;
 }
 
-.contact-container {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.contact-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.contact-information {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.contact-information .cta {
-  width: max-content;
-}
-
 @media only screen and (min-width: 600px) {
   .navigation {
     gap: 2.5rem;
@@ -216,9 +195,6 @@ body {
 
   .cta {
     padding: 1.1rem 2.1rem;
-  }
-
-  .contact-content {
   }
 }
 
