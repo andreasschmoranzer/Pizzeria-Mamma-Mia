@@ -63,10 +63,6 @@ body {
   text-align: center;
 }
 
-.hero-menu {
-  height: calc(50vh - 5rem);
-}
-
 .title {
   font-family: "Poetsen One", sans-serif;
   font-size: 2.9rem;
@@ -79,10 +75,10 @@ body {
   color: var(--text-color);
 }
 
-/* cta durch button ersetzen */
+/* button durch button ersetzen */
 
-.cta,
-.cta-inverted {
+.button,
+.button-inverted {
   width: fit-content;
   display: inline-block;
   color: #ffffff;
@@ -94,22 +90,31 @@ body {
   display: block;
 }
 
-.cta-inverted {
+.button-inverted {
   background-color: rgba(0, 0, 0, 0.2);
   color: var(--primary-color);
 }
 
-.cta:hover {
+.button-menu {
+  margin-top: 1.5rem;
+  width: 4rem;
+}
+
+.button-menu:first-of-type {
+  margin-top: 4rem;
+}
+
+.button:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: var(--primary-color);
 }
 
-.cta-inverted:hover {
+.button-inverted:hover {
   background-color: var(--primary-color);
   color: #ffffff;
 }
 
-.hero-cta {
+.hero-button {
   margin: 4rem 0 0 0;
 }
 
@@ -140,7 +145,7 @@ body {
   font-size: var(--text-size);
 }
 
-.about-cta {
+.about-button {
   margin-top: 2rem;
   width: fit-content;
 }
@@ -274,8 +279,8 @@ body {
     font-size: 1.5rem;
   }
 
-  .cta,
-  .cta-inverted {
+  .button,
+  .button-inverted {
     padding: 1.1rem 2.1rem;
   }
 
