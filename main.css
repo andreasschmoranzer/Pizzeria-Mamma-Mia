@@ -263,6 +263,22 @@ body {
   color: var(--text-color);
 }
 
+.menu-category {
+  text-align: center;
+}
+
+.menu-dishes {
+  /* height: 60vh; */
+  background-color: aqua;
+  display: flex;
+  gap: 0.5rem;
+  /* text-align: center; */
+}
+
+.ingredients {
+  height: 7rem;
+}
+
 @media only screen and (min-width: 600px) {
   .navigation,
   .footer-links {
