@@ -93,7 +93,7 @@ body {
   color: var(--primary-color);
 }
 
-.menu-navigation .button-inverted {
+.menu-nav .button-inverted {
   width: 4rem;
   background-color: rgba(0, 0, 0, 0.55);
 }
@@ -257,12 +257,12 @@ body {
   color: var(--text-color);
 }
 
-.menu-navigation {
+.menu-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 3rem 0 2rem 0;
 }
 
 .menu-category {
@@ -299,7 +299,53 @@ body {
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  font-weight: 200;
+}
+
+.ingredients {
+  font-weight: 200;
+}
+
+.menu-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-transform: lowercase;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.arrow {
   font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.menu-order:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+
+.menu-nav-dots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+
+.dot:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
 }
 
 @media only screen and (min-width: 600px) {
@@ -323,7 +369,7 @@ body {
     padding: 1.1rem 2.1rem;
   }
 
-  .menu-navigation .button-inverted {
+  .menu-nav .button-inverted {
     font-size: 1.1rem;
     width: 5rem;
   }
@@ -348,11 +394,20 @@ body {
     flex-direction: row;
   }
 
-  .menu-navigation {
+  .menu-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 4rem 0;
     gap: 2rem;
+  }
+
+  .menu-dishes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-nav-dots {
+    display: none;
   }
 }
 
@@ -419,9 +474,19 @@ body {
     gap: 5rem;
   }
 
-  .menu-navigation {
+  .menu-nav {
     display: flex;
     flex-direction: row;
+  }
+
+  .menu-dishes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+
+  .ingredients {
+    height: 3rem;
   }
 }
 
@@ -431,6 +496,10 @@ body {
   }
 
   .contact {
+    max-width: 1200px;
+  }
+
+  .menu-dishes {
     max-width: 1200px;
   }
 }

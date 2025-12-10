@@ -15,15 +15,13 @@
       </nav>
       <section class="hero">
         <h1 class="title">Speisekarte</h1>
-        <p class="subtitle">
-          Lorem ipsum dolor sit amet,<br />consectetur adipisicing elit.
-          Delectus, amet.
-        </p>
-        <div class="menu-navigation">
-          <a href="#" class="button button-inverted">Antipasti</a>
-          <a href="#pizza" class="button button-inverted">Pizza</a>
-          <a href="#" class="button button-inverted">Pasta</a>
-          <a href="#" class="button button-inverted">Desserts</a>
+        <div class="menu-nav">
+          <a href="#" class="menu-nav-item button button-inverted">Antipasti</a>
+          <a href="#pizza" class="menu-nav-item button button-inverted"
+            >Pizza</a
+          >
+          <a href="#" class="menu-nav-item button button-inverted">Pasta</a>
+          <a href="#" class="menu-nav-item button button-inverted">Desserts</a>
         </div>
         <a href="index.html" class="button">Zur Startseite</a>
       </section>
@@ -44,7 +42,10 @@
               <p class="ingredients">
                 (Mozzarela in Scheiben,<br />Kirschtomaten, Basilikum)
               </p>
-              <a href="#" class="button">Jetzt bestellen</a>
+              <div class="menu-order">
+                <p class="menu-order-cta">Jetzt bestellen</p>
+                <span class="arrow">></span>
+              </div>
             </div>
             <div class="menu-dish">
               <img
@@ -56,8 +57,41 @@
               <p class="ingredients">
                 (Mozzarela in Scheiben,<br />Kirschtomaten, Basilikum)
               </p>
-              <a href="#" class="button">Jetzt bestellen</a>
+              <div class="menu-order">
+                <p class="menu-order-cta">Jetzt bestellen</p>
+                <span class="arrow">></span>
+              </div>
             </div>
+            <div class="menu-dish">
+              <img
+                src="img/pizza-margherita.png"
+                alt="Pizza Margherita"
+                class="menu-img"
+              />
+              <h3 class="dish-heading">Margherita</h3>
+              <p class="ingredients">(Mozzarela,<br />Basilikum)</p>
+              <div class="menu-order">
+                <p class="menu-order-cta">Jetzt bestellen</p>
+                <span class="arrow">></span>
+              </div>
+            </div>
+            <div class="menu-dish">
+              <img
+                src="img/pizza-funghi.png"
+                alt="Pizza Funghi Freschi"
+                class="menu-img"
+              />
+              <h3 class="dish-heading">Funghi Freschi</h3>
+              <p class="ingredients">(Käse,<br />frische Champignons)</p>
+              <div class="menu-order">
+                <p class="menu-order-cta">Jetzt bestellen</p>
+                <span class="arrow">></span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-nav-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
           </div>
         </div>
       </section>
