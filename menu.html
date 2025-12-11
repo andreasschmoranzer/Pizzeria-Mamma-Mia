@@ -6,7 +6,7 @@
     <title>Pizzeria Mamma Mia</title>
     <link rel="stylesheet" href="main.css" />
 
-    <script>
+    <!-- <script>
       let slideIndex = 1;
       showSlides(slideIndex);
 
@@ -39,7 +39,7 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
-    </script>
+    </script> -->
   </head>
   <body>
     <header>
@@ -67,7 +67,7 @@
           <h2 class="heading">Pizza Verde</h2>
           <p class="subtitle">Unsere vegetarischen Pizzen</p>
           <div class="menu-dishes">
-            <div class="menu-dish mySlides">
+            <div class="menu-dish">
               <img
                 src="img/pizza-caprese.png"
                 alt="Pizza Caprese"
@@ -82,7 +82,7 @@
                 <span class="arrow">></span>
               </div>
             </div>
-            <div class="menu-dish mySlides">
+            <div class="menu-dish">
               <img
                 src="img/pizza-rucola.png"
                 alt="Pizza Rucola"
@@ -97,7 +97,7 @@
                 <span class="arrow">></span>
               </div>
             </div>
-            <div class="menu-dish mySlides">
+            <div class="menu-dish">
               <img
                 src="img/pizza-margherita.png"
                 alt="Pizza Margherita"
@@ -110,7 +110,7 @@
                 <span class="arrow">></span>
               </div>
             </div>
-            <div class="menu-dish mySlides">
+            <div class="menu-dish">
               <img
                 src="img/pizza-funghi.png"
                 alt="Pizza Funghi Freschi"
@@ -124,11 +124,73 @@
               </div>
             </div>
           </div>
-          <div class="menu-nav-dots">
+          <!-- <div class="menu-nav-dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
+          </div> -->
+        </div>
+        <div id="pizza" class="menu-category">
+          <h2 class="heading">Pizza Carne</h2>
+          <p class="subtitle">Salami, Schinken, Chicken – genieße kräftig</p>
+          <div class="menu-dishes">
+            <div class="menu-dish">
+              <img
+                src="img/pizza-caprese.png"
+                alt="Pizza Caprese"
+                class="menu-img"
+              />
+              <h3 class="dish-heading">Caprese</h3>
+              <p class="ingredients">
+                (Mozzarela in Scheiben,<br />Kirschtomaten, Basilikum)
+              </p>
+              <div class="menu-order">
+                <p class="menu-order-cta">Jetzt bestellen</p>
+                <span class="arrow">></span>
+              </div>
+            </div>
+            <div class="menu-dish">
+              <img
+                src="img/pizza-rucola.png"
+                alt="Pizza Rucola"
+                class="menu-img"
+              />
+              <h3 class="dish-heading">Rucola</h3>
+              <p class="ingredients">
+                (Mozzarela in Scheiben,<br />Kirschtomaten, Basilikum)
+              </p>
+              <div class="menu-order">
+                <p class="menu-order-cta">Jetzt bestellen</p>
+                <span class="arrow">></span>
+              </div>
+            </div>
+            <div class="menu-dish">
+              <img
+                src="img/pizza-margherita.png"
+                alt="Pizza Margherita"
+                class="menu-img"
+              />
+              <h3 class="dish-heading">Margherita</h3>
+              <p class="ingredients">(Mozzarela,<br />Basilikum)</p>
+              <div class="menu-order">
+                <p class="menu-order-cta">Jetzt bestellen</p>
+                <span class="arrow">></span>
+              </div>
+            </div>
+            <div class="menu-dish">
+              <img
+                src="img/pizza-funghi.png"
+                alt="Pizza Funghi Freschi"
+                class="menu-img"
+              />
+              <h3 class="dish-heading">Funghi Freschi</h3>
+              <p class="ingredients">(Käse,<br />frische Champignons)</p>
+              <div class="menu-order">
+                <p class="menu-order-cta">Jetzt bestellen</p>
+                <span class="arrow">></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
