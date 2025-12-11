@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzeria Mamma Mia</title>
     <link rel="stylesheet" href="main.css" />
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -32,7 +67,7 @@
           <h2 class="heading">Pizza Verde</h2>
           <p class="subtitle">Unsere vegetarischen Pizzen</p>
           <div class="menu-dishes">
-            <div class="menu-dish">
+            <div class="menu-dish mySlides">
               <img
                 src="img/pizza-caprese.png"
                 alt="Pizza Caprese"
@@ -47,7 +82,7 @@
                 <span class="arrow">></span>
               </div>
             </div>
-            <div class="menu-dish">
+            <div class="menu-dish mySlides">
               <img
                 src="img/pizza-rucola.png"
                 alt="Pizza Rucola"
@@ -62,7 +97,7 @@
                 <span class="arrow">></span>
               </div>
             </div>
-            <div class="menu-dish">
+            <div class="menu-dish mySlides">
               <img
                 src="img/pizza-margherita.png"
                 alt="Pizza Margherita"
@@ -75,7 +110,7 @@
                 <span class="arrow">></span>
               </div>
             </div>
-            <div class="menu-dish">
+            <div class="menu-dish mySlides">
               <img
                 src="img/pizza-funghi.png"
                 alt="Pizza Funghi Freschi"
@@ -92,6 +127,8 @@
           <div class="menu-nav-dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
           </div>
         </div>
       </section>

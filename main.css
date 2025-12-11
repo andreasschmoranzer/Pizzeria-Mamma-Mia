@@ -273,9 +273,9 @@ body {
 
 .menu-dishes {
   margin-top: 1.5rem;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2.5rem; */
 }
 
 /* Hier nochmal prüfen, ob wiederverwendbare CSS Variablen verwendet werden können */
@@ -285,12 +285,20 @@ body {
 }
 
 .menu-dish {
+  background: linear-gradient(
+    45deg,
+    rgba(245, 245, 245, 0.08),
+    rgba(150, 150, 150, 0.4),
+    rgba(245, 245, 245, 0.08)
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 0.7rem;
+  padding: 1rem 0 2rem 0;
+  border-radius: 2.5rem;
 }
 
 /* Hier nochmal prüfen, ob wiederverwendbare CSS Variablen verwendet werden können */
@@ -328,8 +336,7 @@ body {
 }
 
 .menu-nav-dots {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 2rem;
   margin-top: 3.5rem;
 }
@@ -346,6 +353,10 @@ body {
   background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.2s all ease-in-out;
+}
+
+.mySlides:not(.mySlides:nth-child(1)) {
+  display: none;
 }
 
 @media only screen and (min-width: 600px) {
