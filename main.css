@@ -284,6 +284,10 @@ body {
   margin: 2rem 0 0.3rem 0;
 }
 
+.menu-content .menu-heading {
+  margin-top: 4rem;
+}
+
 .menu-dish {
   background: linear-gradient(
     45deg,
@@ -302,12 +306,14 @@ body {
 }
 
 /* Hier nochmal prüfen, ob wiederverwendbare CSS Variablen verwendet werden können */
+/* dish-heading, ingredients und cta ebenfalls in ein div mit display flex column und space between */
 
 .dish-heading {
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
+  height: 2rem;
 }
 
 .ingredients {
@@ -335,30 +341,6 @@ body {
   transition: 0.1s all ease-in-out;
 }
 
-.menu-nav-dots {
-  display: flex;
-  gap: 2rem;
-  margin-top: 3.5rem;
-}
-
-.dot {
-  width: 1rem;
-  height: 1rem;
-  background-color: rgba(0, 0, 0, 0.55);
-  border-radius: 50%;
-  border: 1px solid var(--primary-color);
-}
-
-.dot:hover {
-  background-color: var(--primary-color);
-  cursor: pointer;
-  transition: 0.2s all ease-in-out;
-}
-
-/* .mySlides:not(.mySlides:nth-child(1)) {
-  display: none;
-} */
-
 @media only screen and (min-width: 600px) {
   .navigation,
   .footer-links {
@@ -371,7 +353,7 @@ body {
     line-height: 4rem;
   }
 
-  .subtitle {
+  .subtitle:not(.menu-category .subtitle) {
     font-size: 1.5rem;
   }
 
@@ -440,7 +422,7 @@ body {
     gap: 2rem;
   }
 
-  .heading {
+  .heading:not(.menu-category .heading) {
     font-size: 2rem;
   }
 
@@ -490,10 +472,18 @@ body {
     flex-direction: row;
   }
 
+  .menu-content .heading {
+    margin: 6rem 0 0.3rem 0;
+  }
+
+  .menu-content .menu-heading {
+    margin-top: 8rem;
+  }
+
   .menu-dishes {
     display: flex;
     flex-direction: row;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
   }
 
   .ingredients {
