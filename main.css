@@ -341,6 +341,10 @@ body {
   transition: 0.1s all ease-in-out;
 }
 
+.dish-content {
+  display: flex;
+}
+
 @media only screen and (min-width: 600px) {
   .navigation,
   .footer-links {
