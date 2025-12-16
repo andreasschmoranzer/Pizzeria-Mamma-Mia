@@ -271,6 +271,12 @@ body {
   align-items: center;
 }
 
+/* Hier nochmal prüfen, ob wiederverwendbare CSS Variablen verwendet werden können */
+
+.menu-content .heading {
+  margin: 4rem 0 0.3rem 0;
+}
+
 .menu-dishes {
   margin-top: 1.5rem;
   display: flex;
@@ -278,22 +284,12 @@ body {
   gap: 2.5rem;
 }
 
-/* Hier nochmal prüfen, ob wiederverwendbare CSS Variablen verwendet werden können */
-
-.menu-content .heading {
-  margin: 2rem 0 0.3rem 0;
-}
-
-.menu-content .menu-heading {
-  margin-top: 4rem;
-}
-
 .menu-dish {
   background: linear-gradient(
     45deg,
-    rgba(255, 22, 22, 0.02),
-    rgba(150, 150, 150, 0.2),
-    rgba(169, 9, 9, 0.02)
+    rgba(255, 22, 22, 0.01),
+    rgba(162, 162, 162, 0.2),
+    rgba(169, 9, 9, 0.01)
   );
   display: flex;
   flex-direction: column;
@@ -301,7 +297,7 @@ body {
   justify-content: center;
   text-align: center;
   gap: 0.7rem;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0.8rem 2rem 0.8rem;
   border-radius: 2.5rem;
 }
 
@@ -313,11 +309,18 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
-  height: 2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ingredients {
   font-weight: 200;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-order {
@@ -339,10 +342,6 @@ body {
   color: var(--primary-color);
   cursor: pointer;
   transition: 0.1s all ease-in-out;
-}
-
-.dish-content {
-  display: flex;
 }
 
 @media only screen and (min-width: 600px) {
@@ -401,10 +400,6 @@ body {
   .menu-dishes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .menu-nav-dots {
-    display: none;
   }
 }
 
@@ -480,18 +475,17 @@ body {
     margin: 6rem 0 0.3rem 0;
   }
 
-  .menu-content .menu-heading {
-    margin-top: 8rem;
-  }
-
   .menu-dishes {
     display: flex;
     flex-direction: row;
-    /* margin-top: 4rem; */
+  }
+
+  .dish-heading {
+    height: 4rem;
   }
 
   .ingredients {
-    height: 3rem;
+    height: 5rem;
   }
 }
 
