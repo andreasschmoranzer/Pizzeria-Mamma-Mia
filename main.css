@@ -271,8 +271,6 @@ body {
   align-items: center;
 }
 
-/* Hier nochmal prüfen, ob wiederverwendbare CSS Variablen verwendet werden können */
-
 .menu-content .heading {
   margin: 4rem 0 0.3rem 0;
 }
@@ -299,9 +297,6 @@ body {
   padding: 1rem 0.8rem 2rem 0.8rem;
   border-radius: 2.5rem;
 }
-
-/* Hier nochmal prüfen, ob wiederverwendbare CSS Variablen verwendet werden können */
-/* dish-heading, ingredients und cta ebenfalls in ein div mit display flex column und space between */
 
 .dish-heading {
   color: var(--primary-color);
