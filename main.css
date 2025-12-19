@@ -13,7 +13,6 @@
 :root {
   --primary-color: rgb(218, 26, 0);
   --text-color: rgb(209, 209, 209);
-  --text-size: 0.85rem;
   scroll-behavior: smooth;
 }
 
@@ -136,7 +135,7 @@ body {
 
 .about-text {
   color: var(--text-color);
-  font-size: var(--text-size);
+  font-size: 0.85rem;
 }
 
 .about-button {
@@ -190,7 +189,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 0.2rem;
-  font-size: var(--text-size);
+  font-size: 0.85rem;
 }
 
 .opening-day {
