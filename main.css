@@ -210,8 +210,7 @@ body {
   gap: 2rem;
 }
 
-.contact-img,
-.menu-img {
+.contact-img {
   width: 100%;
 }
 
@@ -295,6 +294,11 @@ body {
   text-align: center;
   padding: 1rem 0.8rem 2rem 0.8rem;
   border-radius: 2.5rem;
+}
+
+.menu-img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .dish-heading {
