@@ -306,7 +306,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -316,7 +316,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .menu-order {
@@ -327,7 +327,7 @@ body {
   text-transform: lowercase;
   color: var(--text-color);
   font-weight: 600;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .arrow {
@@ -399,17 +399,9 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .dish-heading {
-    height: 3rem;
-  }
-
+  .dish-heading,
   .ingredients {
     height: 3rem;
-    margin-top: 1rem;
-  }
-
-  .menu-order {
-    margin-top: 1rem;
   }
 }
 
