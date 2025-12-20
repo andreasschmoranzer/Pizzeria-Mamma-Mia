@@ -297,9 +297,9 @@ body {
 }
 
 .menu-img {
-  width: 70%;
-  height: 50%;
-  object-fit: cover;
+  width: 90%;
+  /* height: 50%; */
+  object-fit: contain;
 }
 
 .dish-heading {
@@ -483,10 +483,6 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 2.5rem;
-  }
-
-  .menu-img {
-    width: 90%;
   }
 }
 
