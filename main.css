@@ -487,10 +487,6 @@ body {
   .menu-img {
     width: 90%;
   }
-
-  .ingredients {
-    height: 5rem;
-  }
 }
 
 @media only screen and (min-width: 1400px) {
