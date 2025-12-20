@@ -298,6 +298,7 @@ body {
 
 .menu-img {
   width: 70%;
+  height: 50%;
   object-fit: cover;
 }
 
